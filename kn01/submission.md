@@ -13,8 +13,14 @@ docker -v
 ![nginxweb](nginxweb.JPG)
 
 ### 5
-#### 1
-Kein Container wurde gestarted aber ein Container "gracious_grothendieck" wurde erstellt. 
+![dockerrund](dockerrund.JPG)
+Ein automatisch generierter Container wurde gestarted. Der Name des Containers wurde zufaellig generiert. Die neuste Version des Ubuntu-Images wurde verwendet.
+![dockerrunit](dockerrunit.JPG)
+Ein automatisch generierter Container wurde gestarted. Der Name ist auch zufaelllig generiert. Mit dem Flag -it wurde die interactive terminal direkt aufgemacht.
+
+### 6
+
+
 
 ## C
 
