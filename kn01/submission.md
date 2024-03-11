@@ -3,9 +3,14 @@
 ## A
 ![gettingStarted](gettingStarted.JPG)
 
+![docker desktop](gettingStartedDD.JPG)
+
 ## B
 ### 1
 docker -v
+
+### 4
+![nginxweb](nginxweb.JPG)
 
 ### 5
 #### 1
