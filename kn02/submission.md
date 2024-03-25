@@ -22,3 +22,8 @@ docker push masa07/m347:kn02a
 docker run -d -p 8080:80 --name kn02 kn02a
 
 ![](aDD.JPG)
+
+![](ahtml.JPG)
+
+# B
+
