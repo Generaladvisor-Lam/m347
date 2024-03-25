@@ -65,3 +65,30 @@ docker build -t kn02b-web -f Dockerfile-web .
 
 docker run -d --name kn02b-web -p 8080:80 kn02b-web
 
+## db.php
+```
+<?php
+      $servername = "kn02b-db";
+      $username = "root";
+      $password = "example";
+      //$dbname = "mysql";
+      // Create connection
+      $conn = new mysqli($servername, $username, $password);
+      // Check connection
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      $sql = "SELECT Host, User FROM mysql.user;";
+      $result = $conn->query($sql);
+      while ($row = $result->fetch_assoc()) {
+        echo ($row["Host"] . " / " . $row["User"] . "<br />");
+      }
+?>
+```
+
+## info.php
+```
+<?php
+    phpinfo();
+?>
+```
