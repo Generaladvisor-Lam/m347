@@ -1,7 +1,4 @@
 docker build -t kn02b-db -f Dockerfile-db .
-
 docker run -d --name kn02b-db -p 3306:3306 kn02b-db
-
 docker build -t kn02b-web -f Dockerfile-web .
-
 docker run -d --name kn02b-web -p 8080:80 kn02b-web
