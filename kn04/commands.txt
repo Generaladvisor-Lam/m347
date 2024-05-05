@@ -1,0 +1,10 @@
+docker-compose up -d
+
+docker compose 
+build images 
+create containers
+start containers
+
+Es geht nicht, weil man noch Logindaten vom alten Dockerfile verwendet. Um das Problem zu umgehen kann man "enviroment" variabeln deklarieren und die alte Daten werden ueberschrieben. 
+
+
