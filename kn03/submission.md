@@ -1,3 +1,17 @@
+```
+
+docker network create -d bridge tbz
+docker network ls
+docker pull busybox:latest
+docker run -itd --name=busybox1 busybox
+docker run -itd --name=busybox2 busybox
+docker run -itd --name=busybox3 --network=tbz busybox
+docker run -itd --name=busybox4 --network=tbz busybox
+
+```
+
+# IP-Adressen
+
 busybox1: 172.17.0.2
 busybox2: 172.17.0.3
 busybox3: 172.19.0.2
