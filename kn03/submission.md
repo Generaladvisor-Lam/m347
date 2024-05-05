@@ -39,4 +39,4 @@ busybox4: 172.19.0.3
 
 Die Container in KN02 sind mit --link verbunden und koennen miteinander reden. 
 
-Busybox1 kann Busybox2 aber nicht Busybox3 pingen, weil Busybox1 und Busybox2 mit dem Standardnetzwerk bridge verbunden sind, waehrend Busybox3 und Busybox4 mit dem Customnetzwerk tbz verbunden sind. Das ist auch der Grund warum sie einander pingen koennen.
+Busybox1 kann Busybox2 aber nicht Busybox3 pingen, weil Busybox1 und Busybox2 mit dem Standardnetzwerk bridge verbunden sind, waehrend Busybox3 und Busybox4 mit dem Customnetzwerk tbz verbunden sind. Das ist auch der Grund warum sie einander pingen koennen. Container im Customnetzwerk koennen auch ueber ihren namen miteinander kommunizieren.
