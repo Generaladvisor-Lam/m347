@@ -16,3 +16,24 @@ busybox1: 172.17.0.2
 busybox2: 172.17.0.3
 busybox3: 172.19.0.2
 busybox4: 172.19.0.3
+
+# Screenshots
+
+## Erstellen
+
+![](1networkcreate.JPG)
+
+![](2dockerrun.JPG)
+
+## Docker Inspect
+
+![](3dockerinspect.JPG)
+
+## Busybox1 ping
+
+![](4pingbox.JPG)
+
+## Busybox3 ping
+
+![](5pingbox.JPG)
+
