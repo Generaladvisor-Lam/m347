@@ -50,6 +50,7 @@ docker compose up umfasst
 docker build --> image erstellen
 docker create --> container erstellen
 docker start --> container starten
+docker attach --> container anhängen
 
 ![](dbphp2.JPG)
 ![](infophp2.JPG)
