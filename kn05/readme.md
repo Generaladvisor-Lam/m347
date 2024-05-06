@@ -16,6 +16,22 @@ Ich kann hier beweisen, dass man files, die ich local erstelle, auch im containe
 
 # B
 
+```
+docker volume create kn05volume
+
+docker run -d --name kn05f -v kn05volume:/data nginx:latest
+
+docker run -d --name kn05g -v kn05volume:/data nginx:latest
+
+docker exec -it kn05f sh
+
+echo "RHeinmetall" >> /data/rhein.txt
+
+docker exec -it kn05g sh
+
+cat /data/rhein.txt
+```
+
 ![](5.JPG)
 
 # C
