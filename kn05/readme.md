@@ -46,3 +46,10 @@ services:
       - rheinmetall:/volume
 ```
 
+## Auszug aus dem 1. Container
+
+![](6.JPG)
+
+## Auszug aus dem 2. Container
+
+![](7.JPG)
