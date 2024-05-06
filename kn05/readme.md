@@ -17,3 +17,32 @@ Ich kann hier beweisen, dass man files, die ich local erstelle, auch im containe
 # B
 
 ![](5.JPG)
+
+# C
+
+```
+version: '3.8'
+
+volumes:
+  rheinmetall:
+  tmpfs:
+
+services:
+  kn05c1:
+    image: nginx:latest
+    volumes:
+      - type: volume
+        source: rheinmetall
+        target: /data
+      - type: bind
+        source: /c/kn05
+        target: /data
+      - type: tmpfs
+        target: /data
+
+  kn05c2:
+    image: nginx:latest
+    volumes:
+      - rheinmetall:/data
+```
+
