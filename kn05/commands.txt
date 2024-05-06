@@ -1,0 +1,23 @@
+docker run -d --name kn05 -v /c/kn05:/usr/kn05 nginx:latest
+
+
+
+docker volume create kn05volume
+
+docker run -d --name kn05f -v kn05volume:/data nginx:latest
+
+docker run -d --name kn05g -v kn05volume:/data nginx:latest
+
+docker exec -it kn05f sh
+
+echo "RHeinmetall" >> /data/rhein.txt
+
+docker exec -it kn05g sh
+
+cat /data/rhein.txt
+
+
+
+
+
+
