@@ -1,4 +1,4 @@
-docker run -d --name kn05 -v /c/kn05:/usr/kn05 nginx:latest
+docker run -d --name kn05a -v /c/kn05:/usr/kn05 nginx:latest
 
 
 
