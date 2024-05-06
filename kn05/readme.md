@@ -33,16 +33,16 @@ services:
     volumes:
       - type: volume
         source: rheinmetall
-        target: /data
+        target: /volume
       - type: bind
         source: /c/kn05
-        target: /data
+        target: /bind
       - type: tmpfs
-        target: /data
+        target: /tmpfs
 
   kn05c2:
     image: nginx:latest
     volumes:
-      - rheinmetall:/data
+      - rheinmetall:/volume
 ```
 
